@@ -8,8 +8,6 @@ from loader import dp, db_bot
 async def on_startup(dispatcher):
     db_bot.open()
     db_bot.create_default_table()
-    # db_bot.cursor.execute("INSERT INTO users VALUES (1, 'Valentyn', 'Starushok', 'I1nk3r')")
-    # db_bot.conn.commit()
     logging.info("Db has opened connection")
 
 async def on_shutdown(dispatcher):
